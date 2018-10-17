@@ -9,12 +9,17 @@ Features.csv - store descriptions (type, category etc)
 Train.csv - mainly weekly sales at the stores over a timespan, with additional data (CPI, unemployment rate etc)
 
 My intention was to apply Unsupervised leaning skills on the data to find out if these could be of use to identify clustering patterns relevant for business questions. 
+The Notebook contaons code for celaning, modeling , joining dfata and then applying pca and kmeans clustering transformations. 
 
 The data is presented in a short Blog on Medium. 
-...................................................................
+
+
 
 The files used for the project are all here; datasets, ipynb and a html version of the Notebook 
-..................................................................
+Note that the project has been revised after feedback, the newest and final version is named with _V2
+
+
+
 Answering my initial Business questions:
 1) Can Unsupervised Learning methods be used for clustering data from the Kaggle Walmart dataset? (The dataset is originally posted for predicting sales, using time dimensions and other techniques)
 - Answer : Yes, the data can be used with Unsupervised Learning methods, 
@@ -37,7 +42,7 @@ Answering my initial Business questions:
                 - stores with high weekly sales are large stores of type A with low unemployment areas. 
                  - genarally, the high-weekly-sale stores are in areas with lwoer temperatures, indicating northern areas
                 
-.......................................................................................................
+
                 
                 
                
