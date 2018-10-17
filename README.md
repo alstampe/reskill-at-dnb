@@ -4,15 +4,17 @@ The project is a part of the ReSkillData Science Initiative at DNB.
 
 I chose to use a subset of the Walmart data sets on stores and sales avalable at Kaggle;
 
-Stores - store data for all Walnmart stores
-Features - store descriptions (type, category etc)
-Train - mainly weekly sales at the stores over a timespan, with additional data (CPI, unemployment rate etc)
+Stores.csv - store data for all Walnmart stores
+Features.csv - store descriptions (type, category etc)
+Train.csv - mainly weekly sales at the stores over a timespan, with additional data (CPI, unemployment rate etc)
 
 My intention was to apply Unsupervised leaning skills on the data to find out if these could be of use to identify clustering patterns relevant for business questions. 
 
 The data is presented in a short Blog on Medium. 
+...................................................................
 
-
+The files used for the project are all here; datasets, ipynb and a html version of the Notebook 
+..................................................................
 Answering my initial Business questions:
 1) Can Unsupervised Learning methods be used for clustering data from the Kaggle Walmart dataset? (The dataset is originally posted for predicting sales, using time dimensions and other techniques)
 - Answer : Yes, the data can be used with Unsupervised Learning methods, 
@@ -33,4 +35,9 @@ Answering my initial Business questions:
 - Answer : Yes, we can see from the clusters that 
                 - stores with low weekly sales are the smallest stores, type C, in areas with high unemployment rates
                 - stores with high weekly sales are large stores of type A with low unemployment areas. 
-                - genarally, the high-weekly-sale stores are in areas with lwoer temperatures, indicating northern areas
+                 - genarally, the high-weekly-sale stores are in areas with lwoer temperatures, indicating northern areas
+                
+.......................................................................................................
+                
+                
+               
