@@ -8,8 +8,31 @@ Stores.csv - store data for all Walnmart stores
 Features.csv - store descriptions (type, category etc)
 Train.csv - mainly weekly sales at the stores over a timespan, with additional data (CPI, unemployment rate etc)
 
-My intention was to apply Unsupervised leaning skills on the data to find out if these could be of use to identify clustering patterns relevant for business questions. 
-The Notebook contaons code for celaning, modeling , joining dfata and then applying pca and kmeans clustering transformations. 
+Libraries used, as shown by imports :
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import confusion_matrix, accuracy_score
+import matplotlib.image as mpimg
+from matplotlib import pyplot as PLT
+from sklearn import preprocessing as p
+from sklearn.cluster import KMeans
+from sklearn.datasets.samples_generator import make_blobs
+%matplotlib inline
+
+
+My intention was to apply Unsupervised leaning skills on the data to find out if these could be of use to identify clustering patterns relevant for business questions. Specifically I used StandardScaler, pca analysis for component reduction and KMEans for clustering.
+The Notebook contaons code for cleaning, modeling , joining data and then applying pca and kmeans clustering transformations. 
+
+RESULTS
+I omitted some columns and recioded date information for simplicity. The 3 datasets were joined to one.
+Pca method identifyed 7 as a good value for reduction for next step. The Kmeans method showed 7 clusters as a good choice for clustering. Finally I retreieved the results and used these for evaluating the clusters. See resukts below for details.
+Clusteirng was useful for handlng the data, but with my choices of data prep I did not obtain any completely unforeseen correletions. Store size is impiortant for sales, as is store type. Unemployment rates correlates with lower sales, and it seems higher temperatures do, too - maybe indicating lower financial level in southern areas. Fuel prices did not seem to have any impact.
 
 The data is presented in a short Blog on Medium. 
 
